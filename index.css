@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	background: #313D52;
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 30%;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+header ul{
+	list-style: none;
+}
+
+/*header encabezado de la pagina*/
+.header{
+	background: #17A589;
+	border:1% solid #3380FF;
+	padding: 2.9%;
+
+}
+.header img{
+	float: left;
+}
+
+.header h1{
+	text-align: center;
+}	
+
+img{
+	display: block;
+	width: 40px;
+}
+
+/*menuh menu de header*/
+
+.menuh li{
+	position: relative;
+	display: inline-block;
+}
+
+.menuh li a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'arial';
+    text-decoration: none; 
+}
+
+.menuh{
+	float: right;
+}
+
+/*menu de navegacion*/
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'arial';
+	text-decoration: none;
+}
+
+.menu li:hover{
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/*submenus*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'arial';
+	text-decoration: none; 
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
